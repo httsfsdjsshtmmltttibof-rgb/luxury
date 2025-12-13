@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Luxury uzb — Bio Link</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:linear-gradient(180deg, #e9e9e9 0%, #f3f3f3 50%, #e6e6e6 100%);
+      --btn:#000000;
+      --white:#ffffff;
+      --radius:14px;
+      --max:460px; /* sal kattaroq, o‘rtacha */ /* ixcham, o‘rta-kichik */
+    }
+
+    *{box-sizing:border-box;}
+
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:var(--max);
+      min-height:100vh;
+      margin:0 auto;
+      display:flex;
+      flex-direction:column;
+      align-items:stretch;
+      padding:18px 12px 72px; /* footer yozuvlar pastga tushib ketmasin */
+    }
+
+    /* Profile */
+    .avatar{
+      width:130px;
+      height:130px;
+      border-radius:50%;
+      overflow:hidden;
+      margin:22px auto 16px;
+      border:3px solid #eee;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#fff;
+    }
+
+    .avatar img{
+      width:98%;
+      height:98%;
+      object-fit:contain;
+      display:block;
+    }
+
+    .name{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      font-size:19px;
+      font-weight:600;
+      color:#111;
+      margin-bottom:20px;
+      text-align:center;
+    }
+
+    .verify{
+      width:18px;
+      height:18px;
+      background:#000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-size:11px;
+      border-radius:50%;
+    }
+
+    /* Buttons — KICHKINA VARIANT */
+    .btn{
+      width:100%;
+      margin:0 auto 16px; /* orasiga biroz ko‘proq masofa */
+      background:var(--btn);
+      color:var(--white);
+      text-decoration:none;
+      padding:24px 16px; /* biroz pastga cho‘zildi */
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:15px; /* kichik matn */
+      font-weight:500;
+      box-shadow:0 6px 14px rgba(0,0,0,.22);
+      animation:pulse 4s infinite;
+      -webkit-tap-highlight-color: transparent;
+      outline:none;
+    }
+
+    .btn i{
+      font-size:18px;
+      color:#fff;
+      width:20px;
+      text-align:center;
+    }
+
+    .btn:nth-child(odd){animation-delay:1.5s;}
+
+    @keyframes pulse{
+      0%,100%{transform:scale(1)}
+      50%{transform:scale(1.03)}
+    }
+
+    .btn:active{ box-shadow:0 0 0 4px rgba(255,255,255,.18); }
+    .btn:focus{ outline:none; }
+
+    /* Map */
+    .map{
+      width:100%;
+      height:240px; /* kichik va ixcham */
+      border-radius:16px;
+      overflow:hidden;
+      margin:28px auto 0;
+      background:#eaeaea;
+    }
+
+    /* Floating Share */
+    .share-fab{
+      position:fixed;
+      right:18px;
+      bottom:24px;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      background:var(--btn);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:20px;
+      box-shadow:0 12px 26px rgba(0,0,0,.35);
+      cursor:pointer;
+      animation:float 3s infinite;
+      z-index:999;
+    }
+
+    @keyframes float{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-6px)}
+    }
+
+    /* Footer */
+.footer-links{
+  margin-top:32px;
+  padding-bottom:24px;
+  font-size:14px;
+  color:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+  white-space:nowrap;
+}
+
+.footer-links a,
+.footer-links a:visited,
+.footer-links a:active{
+  color:#000 !important; /* KOK BO‘LIB KETMASIN */
+  text-decoration:none;
+  font-weight:500;
+}
+
+.footer-links a:hover{
+  text-decoration:underline;
+}
+      50%{transform:translateY(-6px)}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+
+    <div class="avatar">
+      <img src="https://i.postimg.cc/Fs3m3TNG/photo-2025-12-13-12-20-15.jpg" alt="The Luxury uzb">
+    </div>
+
+    <div class="name">
+      The Luxury uzb
+      <span class="verify"><i class="fa-solid fa-check"></i></span>
+    </div>
+
+    <a class="btn" href="tel:+998917740700">
+      <i class="fa-solid fa-phone"></i>
+      Telefon
+    </a>
+
+    <a class="btn" href="https://t.me/luxuryuzbekistan1" target="_blank">
+      <i class="fa-brands fa-telegram"></i>
+      Telegram
+    </a>
+
+    <a class="btn" href="#" onclick="return false;">
+      <i class="fa-solid fa-user"></i>
+      Telegram Admin
+    </a>
+
+    <a class="btn" href="https://www.instagram.com/the.luxury.uzb?igsh=eTljd2VuNzFmcDZm" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+      Instagram
+    </a>
+
+    <a class="btn" href="https://www.instagram.com/theluxury.uz?igsh=dWZmMmxkcXBobGc1" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+      Instagram
+    </a>
+
+    
+
+        <div class="map">
+      <iframe src="https://yandex.com/map-widget/v1/?ll=69.2750284664438%2C41.329205630208136&z=16" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+
+    <!-- Footer links (ENG PASTDA) -->
+    <div class="footer-links">
+      <a href="#" onclick="openPolicy('cookie')">Cookie Preferences</a>
+      <span>·</span>
+      <a href="#" onclick="openPolicy('report')">Report</a>
+      <span>·</span>
+      <a href="https://www.instagram.com/_neolink1/" target="_blank" rel="noopener">Privacy</a>
+    </div>
+
+  </div>
+
+  <div class="share-fab" onclick="sharePage()">
+    <i class="fa-solid fa-share-nodes"></i>
+  </div>
+
+  <script>
+    function sharePage(){
+      const data={
+        title:'The Luxury uzb',
+        text:'The Luxury uzb rasmiy sahifasi',
+        url:window.location.href
+      };
+
+      if(navigator.share){
+        navigator.share(data).catch(()=>{});
+      }else if(navigator.clipboard){
+        navigator.clipboard.writeText(window.location.href)
+          .then(()=>alert('Link nusxalandi'))
+          .catch(()=>prompt('Linkni nusxalang:', window.location.href));
+      }else{
+        prompt('Linkni nusxalang:', window.location.href);
+      }
+    }
+
+    function openPolicy(type){
+      if(type==='cookie'){
+        alert('Cookie Preferences: sayt xavfsizligi va foydalanuvchi sozlamalari.');
+      }
+      if(type==='report'){
+        alert('Report: muammo yoki shikoyat yuborish uchun.');
+      }
+    }else{
+        navigator.clipboard.writeText(window.location.href).then(()=>{
+          alert('Link nusxalandi');
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>
